@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nimajalali/go-force/sobjects"
+	"github.com/customerio/go-force/sobjects"
 )
 
 const (
@@ -18,7 +18,6 @@ type CustomSObject struct {
 	Active    bool   `force:"Active__c"`
 	AccountId string `force:"Account__c"`
 }
-
 
 func (t *CustomSObject) ApiName() string {
 	return "CustomObject__c"
